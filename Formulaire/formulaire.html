@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>M2202 - Formulaire</title>
+    <meta name="Description" content="M2202 - Formulaire">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: calibri, verdana;
+            padding: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+    <script src="./formulaire.js"></script>
+
+    <div class="formulaire">
+
+        <h1>Formulaire de demande d'information sur un département MMI</h1>
+
+        <form id="demandeInfos">
+            <label for="prenom">Mon prénom :</label><br>
+            <input type="text" placeholder="Prénom *" id="prenom" name="prenom" required
+                data-validation-required-message="Merci d'entrer votre prénom."><br><br>
+
+            <label for="nom">Mon nom en majuscules :</label><br>
+            <input type="text" placeholder="NOM" id="nom" name="nom"><br><br>
+
+            <label for="email">Mon adresse de courriel :</label><br>
+            <input type="email" placeholder="courriel *" id="email" name="email" required=""
+                data-validation-required-message="Merci d'entrer votre adresse de courriel."><br><br>
+
+            <label for="departement">Le département MMI sur lequel je souhaite recevoir des informations :</label><br>
+            <select id="departement" name="departement">
+                <option value="Non précisé" selected>Non précisé</option>
+                <option value="Aix-Marseille">Aix-Marseille</option>
+                <option value="Allier">Allier</option>
+                <option value="Angoulême">Angoulême</option>
+                <option value="Belfort-Montbéliard">Belfort-Montbéliard</option>
+                <option value="Béziers">Béziers</option>
+                <option value="Blois">Blois</option>
+                <option value="Bobigny">Bobigny</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Cergy-Pontoise">Cergy-Pontoise</option>
+                <option value="Chambéry">Chambéry</option>
+                <option value="Champs-sur-Marne">Champs-sur-Marne</option>
+                <option value="Cherbourg-Manche">Cherbourg-Manche</option>
+                <option value="Corte">Corte</option>
+                <option value="Dijon-Auxerre">Dijon-Auxerre</option>
+                <option value="Grenoble-Alpes">Grenoble-Alpes</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Haguenau">Haguenau</option>
+                <option value="Laval">Laval</option>
+                <option value="Lens">Lens</option>
+                <option value="Le Puy-en-Velay">Le Puy-en-Velay</option>
+                <option value="Limousin">Limousin</option>
+                <option value="Meaux">Meaux</option>
+                <option value="Mulhouse">Mulhouse</option>
+                <option value="Nancy-Charlemagne">Nancy-Charlemagne</option>
+                <option value="Paul Sabatier">Paul Sabatier</option>
+                <option value="Rouen">Rouen</option>
+                <option value="Saint-Dié">Saint-Dié</option>
+                <option value="Toulon">Toulon</option>
+                <option value="Troyes">Troyes</option>
+                <option value="Vélizy-Rambouillet">Vélizy-Rambouillet</option>
+            </select><input type="button" id="hasard" value="Choisir un département au hasard !"><br><br>
+
+            <label for="precisions">Quelques précisions sur ma demande :</label><br>
+            <textarea id="precisions" cols="70"></textarea><br><br>
+
+            <input type="submit" id="envoi" name="Envoyer le formulaire !">
+        </form>
+
+    </div>
+</body>
+
+<!--
+    TP Formulaires, v1.0, 2020-01-24
+    TP de Javascript/jQuery sur les formulaires
+    Copyright (C) 2020 - Philippe Gambette, Gaëlle Charpentier
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+</html>
